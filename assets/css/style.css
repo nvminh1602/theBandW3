@@ -1,0 +1,384 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* common */
+.text-white {
+    color: #fff;
+}
+
+.mg-left-right-8px {
+    margin-left: -8px;
+    margin-right: -8px;
+}
+
+.padding-lr-8px {
+    padding: 0 8px;
+}
+
+.mb-8px {
+    margin-bottom: 8px;
+}
+
+.row {
+    
+}
+
+.row::after {
+    clear: both;
+    content: "";
+    display: block;
+}
+
+.col {
+    float: left;
+}
+
+.col-full {
+    width: 100%;
+}
+
+.col-half {
+    width: calc(100%/2);
+}
+
+.col-third {
+    width: calc(100%/3);
+}
+
+#main {
+
+}
+
+#header {
+    position: relative;
+    height: 46px;
+    width: 100%;
+    background-color: black;
+    font-size: 15px ;
+    position: fixed;
+    z-index: 1;
+}
+
+#header .nav-mobile-menu {
+    position: absolute;
+    right: 0;
+    top: 0;
+    color: #fff;
+    float: right;
+    line-height: 46px;
+    padding: 0 24px;
+    display: none;
+}
+
+#header .nav-mobile-menu:hover {
+    background-color: #ccc;
+    color: #000;
+}
+
+#nav {
+    position: relative;
+}
+
+#nav > li {
+    display: inline-block;
+}
+
+#nav > li > a{
+    text-transform: uppercase;
+}
+
+#nav > li:hover > a {
+    background-color: #ccc;
+    color: black;
+    display: block;
+}
+
+#nav li a {
+    color: #fff;
+    text-decoration: none;
+    line-height: 46px;
+    padding: 0 24px;
+}
+
+#nav .subnav {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+#nav .subnav li {
+    list-style: none;
+    width: 160px;
+}
+
+#nav .subnav a {
+    color: #000;
+    text-transform: capitalize;
+    padding: 0 16px;
+    line-height: 38.5px;
+}
+
+#nav li:hover .subnav {
+    display: block;
+}
+
+#nav .subnav li:hover a {
+    background-color: #ccc;
+    color: black;
+    display: block;
+}
+
+#nav .nav-search-btn {
+    float: right;
+    color: #fff;
+    line-height: 46px;
+    padding: 0 24px;
+}
+
+#nav .nav-search-btn:hover {
+    background-color: #F33446;
+}
+
+#slider {
+    background: url('../img/slider/slider.jpg') top center / cover no-repeat;
+    padding-top: 50%;
+    position: relative;
+}
+
+#slider .text-container {
+    position: absolute;
+    color: #fff;
+    display: inline-block;
+    text-align: center;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 32px 16px;
+}
+
+#slider .text-heading {
+    font-size: 24px;
+    font-weight: 200;
+    margin: 10px 0;
+    height: 36px;
+    line-height: 36px;
+}
+
+#slider .text-sub-heading {
+    font-size: 15px;
+    font-weight: bold;
+    margin: 15px 0;
+    text-shadow: 0 0 5px #000;
+}
+
+#content {
+
+}
+
+#content .content-section {
+    width: 800px;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 64px 16px;
+}
+
+#content .tour-section {
+    background-color: #000;
+}
+
+#content .text-content-heading {
+    font-size: 30px;
+    letter-spacing: 5px;
+    font-weight: 200;
+    line-height: 45px;
+    text-align: center;
+    margin: 10px 0;
+}
+
+#content .text-content-sub-heading {
+    text-align: center;
+    margin: 15px 0;
+    font-size: 15px;
+    font-style: italic;
+    opacity: 0.5;
+}
+
+#content .text-content-about {
+    text-align: justify;
+    margin: 15px 0;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+#content .members-list {
+    padding: 32px 0;
+}
+
+#content .member-item {
+    text-align: center;
+}
+
+#content .member-name {
+    line-height: 22.5px;
+    margin: 15px 0;
+    font-size: 15px;
+}
+
+#content .member-img {
+    width: 154px;
+    margin-bottom: 16px;
+}
+
+/* tour dates */
+
+#content .tour-time-list {
+    background-color: #fff;
+    color: #757575;
+}
+
+#content .tour-time-list li {
+    list-style: none;
+    padding: 8px 16px;
+    border-bottom: 1px solid #ccc;
+}
+
+#content .sold-out {
+    padding: 2px 8px;
+    background-color: #F33446;
+    color: #fff;
+    margin-left: 16px;
+}
+
+#content .quantity {
+    float: right;
+    background-color: #000;
+    color: #fff ;
+    border-radius: 50%;
+    padding: 2px 8px;
+    margin-right: 16px;
+}
+
+#content .places-list {
+    padding: 32px 0px;
+}
+
+#content .place-item {
+    padding: 0 8px;
+}
+
+#content .place-body {
+    background-color: #fff;
+    color: #000;
+    font-size: 15px;
+    padding: 0 16px;
+    display: inline-block;
+    margin-bottom: 16px;
+}
+
+#content .place-img {
+    width: 100%;
+    display: block;
+}
+
+#content .place-img:hover {
+    opacity: 0.7;
+}
+
+#content .place-heading {
+    font-size: 15px;
+    margin: 15px 0;
+}
+
+#content .place-time {
+    opacity: 0.7;
+    margin: 15px 0;
+}
+
+#content .place-description {
+    margin: 15px 0;
+}
+
+#content .btn {
+    text-decoration: none;
+    padding: 11px 16px;
+    background-color: #000;
+    color: #fff;
+    margin-bottom: 16px;
+    display: inline-block;
+}
+
+#content .btn:hover {
+    background-color: #ccc;
+    color: #000;
+}
+
+/* contact */
+
+#content .contact-list {
+    padding: 32px 0;
+}
+
+#content .contact-item {
+
+}
+
+#content .contact-about {
+    line-height: 1.7;
+}
+
+#content .contact-icon {
+    width: 30px;
+    display: inline-block;
+}
+
+#content .contact-about li {
+    list-style: none;
+    font-weight: 500;
+}
+
+#content .form-control {
+    width: 100%;
+    padding: 8px;
+    line-height: 22px;
+    border: 1px solid #ccc;
+}
+
+#content .btn-send {
+    margin: 16px 0;
+    float: right;
+    border: none;
+}
+
+#content .map-section {
+    background: url('../img/map/map.jpg') top center / cover no-repeat;
+    padding-top: 50%;
+}
+
+#footer {
+    padding: 64px 16px;
+    text-align: center;
+}
+
+#footer .social-list a {
+    text-decoration: none;
+    color: #757575;
+}
+
+#footer .copy-right {
+    margin: 15px 0;
+    color: #757575;
+}
+
+#footer .copy-right a {
+    color: #757575;
+}

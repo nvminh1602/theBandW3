@@ -1,0 +1,67 @@
+
+/* table : width >= 740px (46.25em) và width < 1024px (63.9375em)  */
+@media only screen and (min-width: 46.25em) and (max-width: 63.9375em){
+
+}
+
+/* mobile : width < 740px (46.1875em) */
+@media only screen and (max-width: 46.1875em){
+    .s-col-full {
+        width: 100%;
+    }
+
+    .mb-8px {
+        margin-bottom: 8px;
+    }
+
+    #header {
+        overflow: hidden;
+    }
+    
+    #header .nav-mobile-menu {
+        display: block;
+    }
+    
+    #nav li {
+        display: block;
+    }
+
+    #nav li:first-child {
+        display: inline-block;
+    }
+
+    #nav .nav-search-btn {
+        display: none;
+    }
+
+    #nav .subnav {
+        position: initial;
+        background-color: #333;
+    }
+
+    #nav .subnav li {
+        display: block;
+        width: 100%;
+    }
+
+    #nav .subnav a {
+        color: #fff;
+    }
+
+    #slider .text-container {
+        display: none;
+    }
+
+    #content .member-img {
+        width: 60%;
+    }
+
+    #content .btn {
+        width: 100%;
+        text-align: center;
+    }
+
+    #content .contact-form {
+        margin-top: 16px;
+    }
+}
